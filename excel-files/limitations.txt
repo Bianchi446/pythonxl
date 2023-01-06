@@ -1,0 +1,13 @@
+limitations of using pandas in excel
+
+• When writing DataFrames to files, you can’t include a title or a chart.
+
+• There is no way to change the default format of the header and index in Excel.
+
+• When reading files, pandas automatically transforms cells with errors like #REF!
+or #NUM! into NaN , making it impossible to search for specific errors in your
+spreadsheets.
+
+• Working with big Excel files may require extra settings that are easier to control
+by using the reader and writer packages directly, as we will see in the next
+chapter.
